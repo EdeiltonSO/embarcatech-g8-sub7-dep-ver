@@ -52,11 +52,11 @@ int main()
         break;
 
         case 4:
-            printf("\n%.2f centímetro(s) é o equivalente a %.2f milímetro(s)",medida,centimetroParaMilimetro(medida));
+            printf("\n%.2f centímetro(s) é o equivalente a %.3f milímetro(s)",medida,centimetroParaMilimetro(medida));
         break;
 
         case 5:
-            printf("\n%.2f milímetro(s) é o equivalente a %.2f metro(s)",medida,milimetroParaMetro(medida));
+            printf("\n%.2f milímetro(s) é o equivalente a %.3f metro(s)",medida,milimetroParaMetro(medida));
         break;
         
         case 6:
