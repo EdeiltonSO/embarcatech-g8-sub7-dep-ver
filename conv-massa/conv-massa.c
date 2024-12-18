@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Declaração das funções
 float tonelada(int entrada, float valor);
 float kilograma(int entrada, float valor);
 float hectograma(int entrada, float valor);
@@ -10,10 +11,16 @@ float centigrama(int entrada, float valor);
 float miligrama(int entrada, float valor);
 
 int main(){
-    int entrada, saida, logout;
     
-    logout = 1;
+    // Variaveis de controle do tipo de coversão
+    int entrada, saida; 
     
+    // Variavel de controle do menu
+    int logout;
+    
+    logout = 1; // Flag do menu
+    
+    // Menu
     do {
         printf("Qual a unidade de medida de entrada? \n");
         printf("1 - Tonelada \n");
@@ -41,10 +48,14 @@ int main(){
 
         scanf("%d", &saida);
 
+        // Tratamento de erros antes realizar as conversões
         if((entrada < 1 || entrada > 8) || (saida < 1 || saida > 8)){
             printf("Algum numero digitado está fora do intervalo proposto. Tente novamente.");
         }
-        else if(entrada != saida){
+        else if(entrada == saida){
+            printf("\n\nNão há nada para converter.\n\n\n");
+        }
+        else{
             float valor;
             printf("Digite o valor da massa: ");
             scanf("%f", &valor);
@@ -102,12 +113,9 @@ int main(){
                 printf("\n\nErro! Algum parametro está incorreto. \n\n\n");
                 break;
             }
-
-        }
-        else{
-            printf("\n\nNão há nada para converter.\n\n\n");
         }
 
+        // Define se o usuário permanece no looping
         printf("Gostaria de tentar outra conversao? Digite 1 para sim e 0 para voltar ao menu principal: ");
         scanf("%d", &logout);
         printf("\n\n\n\n\n\n\n\n\n");
@@ -117,6 +125,8 @@ int main(){
 
     return 0;
 }
+
+// Implementação das funções
 
 float tonelada(int entrada, float valor){
     float resultado;
