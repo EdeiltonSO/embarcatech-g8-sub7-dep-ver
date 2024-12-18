@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Declaração das funções
 float tonelada(int entrada, float valor);
@@ -11,7 +12,10 @@ float centigrama(int entrada, float valor);
 float miligrama(int entrada, float valor);
 
 int main(){
-    
+     
+    // Resolve as questões do acento
+    system("chcp 65001 > nul");
+
     // Variaveis de controle do tipo de coversão
     int entrada, saida; 
     
@@ -24,33 +28,33 @@ int main(){
     do {
         printf("Qual a unidade de medida de entrada? \n");
         printf("1 - Tonelada \n");
-        printf("2 - Kilograma \n");
+        printf("2 - Quilograma \n");
         printf("3 - Hectograma \n");
         printf("4 - Decagrama \n");
         printf("5 - Grama \n");
         printf("6 - Decigrama \n");
         printf("7 - Centigrama \n");
         printf("8 - Miligrama \n");
-        printf("Digite aqui sua opcao: ");
+        printf("Digite aqui sua opção: ");
 
         scanf("%d", &entrada);
 
         printf("\n\n\n\nPara qual unidade de medida deseja converter? \n");
         printf("1 - Tonelada \n");
-        printf("2 - Kilograma \n");
+        printf("2 - Quilograma \n");
         printf("3 - Hectograma \n");
         printf("4 - Decagrama \n");
         printf("5 - Grama \n");
         printf("6 - Decigrama \n");
         printf("7 - Centigrama \n");
         printf("8 - Miligrama \n");
-        printf("Digite aqui sua opcao: ");
+        printf("Digite aqui sua opção: ");
 
         scanf("%d", &saida);
 
         // Tratamento de erros antes realizar as conversões
         if((entrada < 1 || entrada > 8) || (saida < 1 || saida > 8)){
-            printf("Algum numero digitado está fora do intervalo proposto. Tente novamente.");
+            printf("Algum número digitado está fora do intervalo proposto. Tente novamente.");
         }
         else if(entrada == saida){
             printf("\n\nNão há nada para converter.\n\n\n");
@@ -116,7 +120,7 @@ int main(){
         }
 
         // Define se o usuário permanece no looping
-        printf("Gostaria de tentar outra conversao? Digite 1 para sim e 0 para voltar ao menu principal: ");
+        printf("Gostaria de tentar outra conversão? Digite 1 para sim e 0 para voltar ao menu principal: ");
         scanf("%d", &logout);
         printf("\n\n\n\n\n\n\n\n\n");
 
