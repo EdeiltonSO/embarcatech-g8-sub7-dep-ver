@@ -34,7 +34,8 @@ int main()
         }
         if(opcao == 0)break;
 
-        printf("Informe o valor da medida para realizar a converção: ");
+        printf("Informe o valor da medida para realizar a conversão: ");
+        
         scanf("%f",&medida);
 
         switch (opcao)
