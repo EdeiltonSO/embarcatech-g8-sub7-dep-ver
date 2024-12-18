@@ -1,42 +1,101 @@
 #include <stdio.h>
-
-//Convers√£o de metros
+#include <locale.h>
+#include <stdlib.h>
+// Convers„o de metros
 float metroParaCentimetro(float medidaMetro);
 float metroParaMilimetro(float medidaMetro);
 
-//Convers√£o de centimetros
+// Convers„o de centimetros
 float centimetroParaMetro(float medidaCentimetro);
 float centimetroParaMilimetro(float medidaCentimetro);
 
-//Convers√£o de milimetros
+// Convers„o de milimetros
 float milimetroParaMetro(float medidaMilimetro);
 float milimetroParaCentimetro(float medidaMilimetro);
 
-int main() {
-    
-    return 0;
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int opcao = 0;
+    float medida = 0;
+
+    do{
+        printf("\n---------------------------------------");
+        printf("\nConversor de medidas");
+        printf("\n---------------------------------------");
+
+        printf("\nInforme o tipo de convers„o\n\n1 - Metros para centÌmetros\n2 - Metros para milÌmetros\n3 - CentÌmetros para metro\n4 - CentÌmetro para milÌmetro\n5 - MilÌmetro para metro\n6 - MÌlimetro para centÌmetro\n0 - Sair\n");
+
+        scanf("%d",&opcao);
+
+        if(opcao > 6 || opcao < 0){
+            printf("\nopÁ„o invalida. Por favor selecione uma opÁ„o de convers„o apropriada");
+            continue;
+        }
+        if(opcao == 0)break;
+
+        printf("Informe o valor da medida para realizar a converÁ„o: ");
+        scanf("%f",&medida);
+
+        switch (opcao)
+        {
+        case 1:
+            printf("\n%.2f metro(s) È o equivalente a %.2f centÌmetro(s)",medida,metroParaCentimetro(medida));
+        break;
+
+        case 2:
+            printf("\n%.2f metro(s) È o equivalente a %.2f milÌmetro(s)",medida,metroParaMilimetro(medida));
+        break;
+
+        case 3:
+            printf("\n%.2f centÌmetro(s) È o equivalente a %.2f metro(s)",medida,centimetroParaMetro(medida));
+        break;
+
+        case 4:
+            printf("\n%.2f centÌmetro(s) È o equivalente a %.2f milÌmetro(s)",medida,centimetroParaMilimetro(medida));
+        break;
+
+        case 5:
+            printf("\n%.2f milÌmetro(s) È o equivalente a %.2f metro(s)",medida,milimetroParaMetro(medida));
+        break;
+        
+        case 6:
+            printf("\n%.2f milÌmetro(s) È o equivalente a %.2f centÌmetro(s)",medida,milimetroParaCentimetro(medida));
+        break;
+        
+        }
+
+    } while (opcao != 0);
+
+        return 0;
 }
 
-//Convers√£o de metros
-float metroParaCentimetro(float medidaMetro){
-    return medidaMetro*100;
+// Convers„o de metros
+float metroParaCentimetro(float medidaMetro)
+{
+    return medidaMetro * 100;
 }
-float metroParaMilimetro(float medidaMetro){
-    return medidaMetro*1000;
-}
-
-//Convers√£o de centimetros
-float centimetroParaMetro(float medidaCentimetro){
-    return medidaCentimetro/100;
-}
-float centimetroParaMilimetro(float medidaCentimetro){
-    return medidaCentimetro*10;
+float metroParaMilimetro(float medidaMetro)
+{
+    return medidaMetro * 1000;
 }
 
-//Convers√£o de milimetros
-float milimetroParaMetro(float medidaMilimetro){
-    return medidaMilimetro/1000;
+// Convers„o de centimetros
+float centimetroParaMetro(float medidaCentimetro)
+{
+    return medidaCentimetro / 100;
 }
-float milimetroParaCentimetro(float medidaMilimetro){
-    return medidaMilimetro/10;
+float centimetroParaMilimetro(float medidaCentimetro)
+{
+    return medidaCentimetro * 10;
+}
+
+// Convers„o de milimetros
+float milimetroParaMetro(float medidaMilimetro)
+{
+    return medidaMilimetro / 1000;
+}
+float milimetroParaCentimetro(float medidaMilimetro)
+{
+    return medidaMilimetro / 10;
 }
