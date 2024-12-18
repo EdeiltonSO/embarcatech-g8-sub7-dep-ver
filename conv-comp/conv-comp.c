@@ -13,9 +13,7 @@ float milimetroParaMetro(float medidaMilimetro);
 float milimetroParaCentimetro(float medidaMilimetro);
 
 int main() {
-
-    printf("%.2f",milimetroParaCentimetro(100));
-
+    
     return 0;
 }
 
