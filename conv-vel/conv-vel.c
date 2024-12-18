@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
+    system("chcp 65001 >nul");
     int opcaoini, opcaofim;
     float vms = 0.0, vmphs = 0.0, vkmhs = 0.0, convfim = 0.0;
     #define mstomph 2.2369; // Constante de Conversão de Metros por Segundo Para Milhas Por Hora
@@ -8,10 +10,10 @@ int main() {
     #define kmhtomph 0.621371; // Constante de Quilômetros por Hora para Milhas por Hora
     printf("Bem vindo ao Conversor de velocidade \n");
     printf("Escolha a primeira unidade para Conversão:\n");
-    printf("1 - Metros por Segundo \n 2 - Quilômetros por Hora \n 3 - Milhas por Hora \n");
+    printf("1 - Metros por Segundo \n2 - Quilômetros por Hora \n3 - Milhas por Hora \n");
     scanf("%d", &opcaoini);
     printf("Escolha a segunda unidade para Conversão: \n");
-    printf("1 - Metros por Segundo \n 2 - Quilômetros por Hora \n 3 - Milhas por Hora \n");
+    printf("1 - Metros por Segundo \n2 - Quilômetros por Hora \n3 - Milhas por Hora \n");
     scanf("%d", &opcaofim);
     
     if (opcaoini == 1) 
