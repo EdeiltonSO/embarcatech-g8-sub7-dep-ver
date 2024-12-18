@@ -270,44 +270,6 @@ float decagrama(int entrada, float valor){
     return resultado;
 }
 
-float decagrama(int entrada, float valor){
-    float resultado;
-    switch (entrada)
-    {
-    case 1:
-        resultado = valor * 1000000;
-        break;
-
-    case 2:
-        resultado = valor * 1000;
-        break;
-
-    case 3:
-        resultado = valor * 100;
-        break;
-
-    case 4:
-        resultado = valor * 10;
-        break;
-
-    case 6:
-        resultado = valor / 10;
-        break;
-
-    case 7:
-        resultado = valor / 100;
-        break;
-
-    case 8:
-        resultado = valor / 1000;
-        break;
-
-    default:
-        break;
-    }
-    return resultado;
-}
-
 float grama(int entrada, float valor){
     float resultado;
     switch (entrada)
