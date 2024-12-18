@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> 
 
 void converterBitsBytes() {
     double bits, bytes, kilobytes, megabytes, gigabytes;
@@ -19,6 +20,7 @@ void converterBitsBytes() {
 }
 
 int main() {
+    system("chcp 65001 > nul"); 
     printf("Conversor de Bits e Bytes\n\n");
     converterBitsBytes();
     return 0;
