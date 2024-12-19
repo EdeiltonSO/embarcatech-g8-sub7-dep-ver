@@ -3,6 +3,7 @@
 
 #include "converter-bits-bytes.h"
 
+// Função que realiza as conversões de bits para outras unidades
 void converterBitsBytes() {
     double bits, bytes, kilobytes, megabytes, gigabytes;
 
@@ -22,6 +23,7 @@ void converterBitsBytes() {
 }
 
 int indexDados() {
+    // Define a codificação para UTF-8, garantindo suporte a caracteres especiais
     system("chcp 65001 > nul"); 
     printf("Conversor de Bits e Bytes\n\n");
     converterBitsBytes();
