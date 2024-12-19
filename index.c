@@ -13,7 +13,7 @@ int main() {
         printf("\n--- Conversor de unidades de medida ---");
         printf("\n---------------------------------------\n");
 
-        printf("\nDigite o número do conversor que deseja utilizar e tecle ENTER");
+        printf("\nDigite o numero do conversor que deseja utilizar e tecle ENTER");
         printf("\n(ou tecle 0 seguido de ENTER para encerrar o programa)\n\n");
         printf("1 - Conversor de comprimento\n");
         printf("2 - Conversor de tempo\n");
