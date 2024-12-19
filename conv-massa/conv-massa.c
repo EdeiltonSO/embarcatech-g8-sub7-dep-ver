@@ -14,7 +14,7 @@ float miligrama(int entrada, float valor);
 int main(){
      
     // Resolve as questões do acento
-    system("chcp 65001 > nul");
+    system("chcp 65001 > null");
 
     // Variaveis de controle do tipo de coversão
     int entrada, saida; 
@@ -61,54 +61,47 @@ int main(){
         }
         else{
             float valor;
+            float resultado;
             printf("Digite o valor da massa: ");
             scanf("%f", &valor);
             switch (saida)
             {
             case 1:
-                float resultado;
                 resultado = tonelada(entrada, valor);
                 printf("Resposta: %.4f toneladas", resultado);
                 break;
 
             case 2:
-                float resultado;
                 resultado = kilograma(entrada, valor);
                 printf("Resposta: %.4f kilogramas", resultado);
                 break;
 
             case 3:
-                float resultado;
                 resultado = hectograma(entrada, valor);
                 printf("Resposta: %.4f hectogramas", resultado);
                 break;
 
             case 4:
-                float resultado;
                 resultado = decagrama(entrada, valor);
                 printf("Resposta: %.4f decagramas", resultado);
                 break;
 
             case 5:
-                float resultado;
                 resultado = grama(entrada, valor);
                 printf("Resposta: %.4f gramas", resultado);
                 break;
 
             case 6:
-                float resultado;
                 resultado = decigrama(entrada, valor);
                 printf("Resposta: %.4f decigramas", resultado);
                 break;
 
             case 7:
-                float resultado;
                 resultado = centigrama(entrada, valor);
                 printf("Resposta: %.4f centigramas", resultado);
                 break;
 
             case 8:
-                float resultado;
                 resultado = miligrama(entrada, valor);
                 printf("Resposta: %.4f miligramas", resultado);
                 break;
