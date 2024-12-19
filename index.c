@@ -22,6 +22,7 @@ int main() {
 
         printf("\n> ");
         scanf("%d", &op);
+        fflush(stdin);
         printf("\n");
 
         switch (op)
