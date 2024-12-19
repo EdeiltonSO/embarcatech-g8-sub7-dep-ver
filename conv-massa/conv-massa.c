@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// DeclaraÁ„o das funÁıes
+// Declara√ß√£o das fun√ß√µes
 float tonelada(int entrada, float valor);
 float kilograma(int entrada, float valor);
 float hectograma(int entrada, float valor);
@@ -13,10 +13,10 @@ float miligrama(int entrada, float valor);
 
 int main(){
      
-    // Resolve as questıes do acento
-    system("chcp 65001 > null");
+    // Resolve as quest√µes do acento
+    system("chcp 65001 > nul");
 
-    // Variaveis de controle do tipo de covers„o
+    // Variaveis de controle do tipo de covers√£o
     int entrada, saida; 
     
     // Variavel de controle do menu
@@ -35,7 +35,7 @@ int main(){
         printf("6 - Decigrama \n");
         printf("7 - Centigrama \n");
         printf("8 - Miligrama \n");
-        printf("Digite aqui sua opÁ„o: ");
+        printf("Digite aqui sua op√ß√£o: ");
 
         scanf("%d", &entrada);
 
@@ -48,16 +48,16 @@ int main(){
         printf("6 - Decigrama \n");
         printf("7 - Centigrama \n");
         printf("8 - Miligrama \n");
-        printf("Digite aqui sua opÁ„o: ");
+        printf("Digite aqui sua op√ß√£o: ");
 
         scanf("%d", &saida);
 
-        // Tratamento de erros antes realizar as conversıes
+        // Tratamento de erros antes realizar as convers√µes
         if((entrada < 1 || entrada > 8) || (saida < 1 || saida > 8)){
-            printf("Algum n˙mero digitado est· fora do intervalo proposto. Tente novamente.");
+            printf("Algum n√∫mero digitado est√° fora do intervalo proposto. \n\n\n");
         }
         else if(entrada == saida){
-            printf("\n\nN„o h· nada para converter.\n\n\n");
+            printf("N√£o h√° nada para converter. \n\n\n");
         }
         else{
             float valor;
@@ -68,52 +68,52 @@ int main(){
             {
             case 1:
                 resultado = tonelada(entrada, valor);
-                printf("Resposta: %.4f toneladas", resultado);
+                printf("Resposta: %.4f toneladas\n", resultado);
                 break;
 
             case 2:
                 resultado = kilograma(entrada, valor);
-                printf("Resposta: %.4f kilogramas", resultado);
+                printf("Resposta: %.4f quilogramas\n", resultado);
                 break;
 
             case 3:
                 resultado = hectograma(entrada, valor);
-                printf("Resposta: %.4f hectogramas", resultado);
+                printf("Resposta: %.4f hectogramas\n", resultado);
                 break;
 
             case 4:
                 resultado = decagrama(entrada, valor);
-                printf("Resposta: %.4f decagramas", resultado);
+                printf("Resposta: %.4f decagramas\n", resultado);
                 break;
 
             case 5:
                 resultado = grama(entrada, valor);
-                printf("Resposta: %.4f gramas", resultado);
+                printf("Resposta: %.4f gramas\n", resultado);
                 break;
 
             case 6:
                 resultado = decigrama(entrada, valor);
-                printf("Resposta: %.4f decigramas", resultado);
+                printf("Resposta: %.4f decigramas\n", resultado);
                 break;
 
             case 7:
                 resultado = centigrama(entrada, valor);
-                printf("Resposta: %.4f centigramas", resultado);
+                printf("Resposta: %.4f centigramas\n", resultado);
                 break;
 
             case 8:
                 resultado = miligrama(entrada, valor);
-                printf("Resposta: %.4f miligramas", resultado);
+                printf("Resposta: %.4f miligramas\n", resultado);
                 break;
 
             default:
-                printf("\n\nErro! Algum parametro est· incorreto. \n\n\n");
+                printf("\n\nErro! Algum par√¢metro est√° incorreto. \n\n\n");
                 break;
             }
         }
 
-        // Define se o usu·rio permanece no looping
-        printf("Gostaria de tentar outra convers„o? Digite 1 para sim e 0 para voltar ao menu principal: ");
+        // Define se o usu√°rio permanece no looping
+        printf("Gostaria de tentar outra convers√£o? Digite 1 para sim e 0 para voltar ao menu principal: ");
         scanf("%d", &logout);
         printf("\n\n\n\n\n\n\n\n\n");
 
@@ -123,7 +123,7 @@ int main(){
     return 0;
 }
 
-// ImplementaÁ„o das funÁıes
+// Implementa√ß√£o das fun√ß√µes
 
 float tonelada(int entrada, float valor){
     float resultado;
