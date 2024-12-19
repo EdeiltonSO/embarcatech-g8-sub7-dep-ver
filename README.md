@@ -16,26 +16,34 @@ Implementado por [Edeilton Oliveira](https://www.linkedin.com/in/edeiltonso/).
 
 ...
 
+Implementado por...
+
 ### Conversor de unidades de armazenamento da computação
 
 ...
+
+Implementado por...
 
 ### Conversor de unidades de tempo
 
 ...
 
+Implementado por...
+
 ### Conversor de unidades de velocidade
 
 ...
+
+Implementado por...
 
 ## 🔵 Como executar o programa?
 
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c`;
-2. `./a`;
+1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c`
+2. `./a`
 
 ### Com o Makefile do MinGW
-1. `mingw32-make`;
+1. `mingw32-make`
 2. `./conversor.exe`
