@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+#include "conv-vel.h"
+
+int indexVelocidade() {
     system("chcp 65001 >nul");
     int opcaoini, opcaofim;
     float vms = 0.0, vmphs = 0.0, vkmhs = 0.0, convfim = 0.0;

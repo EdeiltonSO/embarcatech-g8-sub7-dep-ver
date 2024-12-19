@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
+#include "converter-bits-bytes.h"
+
 // Função que realiza as conversões de bits para outras unidades
 void converterBitsBytes() {
     double bits, bytes, kilobytes, megabytes, gigabytes;
@@ -23,7 +25,7 @@ void converterBitsBytes() {
     printf("Gigabytes (GB): %.10lf\n", gigabytes);
 }
 
-int main() {
+int indexDados() {
     // Define a codificação para UTF-8, garantindo suporte a caracteres especiais
     system("chcp 65001 > nul"); 
 
