@@ -33,5 +33,7 @@ int main() {
     // Chama a função de conversão
     converterBitsBytes();
 
+    system("pause");
+    
     return 0; // Indica que o programa terminou com sucesso
 }
