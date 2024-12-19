@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "conv-comp/conv-comp.h"
 
 int main() {
     int op = -1;
@@ -23,7 +24,7 @@ int main() {
         switch (op)
         {
         case 1:
-            printf("comprimento\n");
+            indexComprimento();
             break;
         case 2:
             printf("tempo\n");
