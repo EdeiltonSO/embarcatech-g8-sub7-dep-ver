@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include "conv-comp/conv-comp.h"
+#include "conv-tempo/conv-tempo.h"
+#include "conv-vel/conv-vel.h"
+#include "converter-bits-bytes/converter-bits-bytes.h"
 
 int main() {
     int op = -1;
@@ -27,13 +30,13 @@ int main() {
             indexComprimento();
             break;
         case 2:
-            printf("tempo\n");
+            indexTempo();
             break;
         case 3:
-            printf("velocidade\n");
+            indexVelocidade();
             break;
         case 4:
-            printf("dados\n");
+            indexDados();
             break;
         
         default:

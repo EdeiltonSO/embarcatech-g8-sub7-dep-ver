@@ -1,6 +1,8 @@
 #include <stdio.h>
 
-int main(){
+#include "conv-tempo.h"
+
+int indexTempo(){
 
     int opc;
     double segundos,minutos,horas;

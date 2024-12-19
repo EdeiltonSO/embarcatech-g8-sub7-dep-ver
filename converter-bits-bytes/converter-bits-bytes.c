@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
+#include "converter-bits-bytes.h"
+
 void converterBitsBytes() {
     double bits, bytes, kilobytes, megabytes, gigabytes;
 
@@ -19,7 +21,7 @@ void converterBitsBytes() {
     printf("Gigabytes (GB): %.10lf\n", gigabytes);
 }
 
-int main() {
+int indexDados() {
     system("chcp 65001 > nul"); 
     printf("Conversor de Bits e Bytes\n\n");
     converterBitsBytes();
