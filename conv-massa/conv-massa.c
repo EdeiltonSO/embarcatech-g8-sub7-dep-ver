@@ -38,6 +38,7 @@ int main(){
         printf("Digite aqui sua opção: ");
 
         scanf("%d", &entrada);
+        fflush(stdin);
 
         printf("\n\n\n\nPara qual unidade de medida deseja converter? \n");
         printf("1 - Tonelada \n");
@@ -51,6 +52,7 @@ int main(){
         printf("Digite aqui sua opção: ");
 
         scanf("%d", &saida);
+        fflush(stdin);
 
         // Tratamento de erros antes realizar as conversões
         if((entrada < 1 || entrada > 8) || (saida < 1 || saida > 8)){
@@ -64,6 +66,7 @@ int main(){
             float resultado;
             printf("Digite o valor da massa: ");
             scanf("%f", &valor);
+            fflush(stdin);
             switch (saida)
             {
             case 1:
