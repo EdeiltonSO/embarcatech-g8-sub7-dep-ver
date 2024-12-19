@@ -47,3 +47,6 @@ Na raiz do projeto, execute uma das sequências de comandos:
 ### Com o Makefile do MinGW
 1. `mingw32-make`
 2. `./conversor.exe`
+
+Você também pode modificar o nome do executável gerado ao utilizar o GCC diretamente.
+Para isso, adicione a flag `-o conversor` no final do primeiro comando.
