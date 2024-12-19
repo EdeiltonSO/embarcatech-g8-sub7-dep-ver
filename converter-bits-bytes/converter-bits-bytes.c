@@ -14,9 +14,9 @@ void converterBitsBytes() {
 
     printf("Conversões:\n");
     printf("Bytes: %.2lf\n", bytes);
-    printf("Kilobytes (KB): %.2lf\n", kilobytes);
-    printf("Megabytes (MB): %.2lf\n", megabytes);
-    printf("Gigabytes (GB): %.2lf\n", gigabytes);
+    printf("Kilobytes (KB): %.10lf\n", kilobytes);
+    printf("Megabytes (MB): %.10lf\n", megabytes);
+    printf("Gigabytes (GB): %.10lf\n", gigabytes);
 }
 
 int main() {
