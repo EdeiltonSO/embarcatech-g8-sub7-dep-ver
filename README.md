@@ -26,9 +26,21 @@ Implementado por...
 
 ### Conversor de unidades de tempo
 
-...
+O conversor de tempo permite que você converta as unidades de tempo mais utilizadas: segundos, minutos e horas.
+Será possível converter:
+--------------------------------------------
+1-Segundos para minutos;
+2-Segundos para horas;
+3-Minutos para segundos;
+4-Minutos para horas;
+5-Horas para segundos;
+6-Horas para minutos.
+--------------------------------------------
 
-Implementado por...
+Cada conversão possui uma precisão de 5 decimais 
+
+
+Implementado por...[Gustavo Oliveira Alves](https://github.com/Astorolus-11)
 
 ### Conversor de unidades de velocidade
 
