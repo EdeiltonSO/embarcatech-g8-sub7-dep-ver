@@ -32,9 +32,14 @@ Implementado por...
 
 ### Conversor de unidades de velocidade
 
-...
+O arquivo `conv-vel.c`, implementa um conversor de velocidade em linguagem C. Ele permite converter valores entre três diferentes unidades de medida de velocidade:
+Metros por Segundo (m/s)
+Quilômetros por Hora (km/h)
+Milhas por Hora (mph)
 
-Implementado por...
+A aplicação é interativa, solicitando ao usuário as unidades de entrada e saída, bem como o valor que deseja converter. Tem como funcionalidades
+a seleção da unidade de entrada, seleção da unidade de saída, além do cálculo de conversão, baseado nas constantes de conversão pré-definidas e claro a exibição do resultado exibindo o valor convertido, formatado com duas casas decimais.
+Implementado por [Valnei Sousa](https://www.linkedin.com/in/valnei-sousa-45a831286/)
 
 ## 🔵 Como executar o programa?
 
