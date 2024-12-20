@@ -17,7 +17,7 @@ Implementado por [Edeilton Oliveira](https://www.linkedin.com/in/edeiltonso/).
 O conversor de unidades de comprimento é uma funcionalidade que permite o usuário converter 3 diferentes tipos de medidas, sendo elas: metro, centímetro e milímetro. A utilização da funcionalidade se dá a partir de quatro passos simples:
 
 1° Selecionar a opção "conversor de comprimento" no menu principal;
-2° Selecionar a o tipo de conversão(metros, centímetros ou milímetros);
+2° Selecionar o tipo de conversão(metros, centímetros ou milímetros);
 3° Fornecer o valor da medida que será convertida;
 4° Apresentação da conversão.
 
