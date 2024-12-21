@@ -59,6 +59,12 @@ A aplicação é interativa, solicitando ao usuário as unidades de entrada e sa
 
 Implementado por [Valnei Sousa](https://www.linkedin.com/in/valnei-sousa-45a831286/)
 
+### Conversor de unidades de massa
+
+O arquivo `conv-massa.c` implementa um menu no qual o usuário pode realizar conversões de unidades de medidas de massa. Ao escolher uma unidade de medida de entrada e de saída o usuário terá printado na tela o valor convertido na unidade de medida selecionada. Após realizar a conversão o usuário pode decidir se deseja permanecer convertendo outros valores ou se deseja voltar ao menu principal.
+
+Implementado por [Cibelle Sousa Rodrigues](https://github.com/CibelleSousa)
+
 ## 🔵 Como executar o programa?
 
 Na raiz do projeto, execute uma das sequências de comandos:
