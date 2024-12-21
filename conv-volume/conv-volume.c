@@ -124,7 +124,7 @@ float obterValor(const char* unidade) {
     return valor;
 }
 
-int main() {
+int indexVolume() {
     volume();
     return 0;
 }

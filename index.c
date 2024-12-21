@@ -4,6 +4,7 @@
 #include "conv-vel/conv-vel.h"
 #include "converter-bits-bytes/converter-bits-bytes.h"
 #include "conv-massa/conv-massa.h"
+#include "conv-volume/conv-volume.h"
 
 int main() {
     int op = -1;
@@ -21,6 +22,7 @@ int main() {
         printf("3 - Conversor de velocidade\n");
         printf("4 - Conversor de dados\n");
         printf("5 - Conversor de massa\n");
+        printf("6 - Conversor de volume\n");
 
         printf("\n> ");
         scanf("%d", &op);
@@ -29,23 +31,26 @@ int main() {
 
         switch (op)
         {
-        case 1:
-            indexComprimento();
-            break;
-        case 2:
-            indexTempo();
-            break;
-        case 3:
-            indexVelocidade();
-            break;
-        case 4:
-            indexDados();
-            break;
-        case 5:
-            indexMassa();
-            break;
-        default:
-            break;
+            case 1:
+                indexComprimento();
+                break;
+            case 2:
+                indexTempo();
+                break;
+            case 3:
+                indexVelocidade();
+                break;
+            case 4:
+                indexDados();
+                break;
+            case 5:
+                indexMassa();
+                break;
+            case 6:
+                indexVolume();
+                break;
+            default:
+                break;
         }
     } while (op != 0);
     
