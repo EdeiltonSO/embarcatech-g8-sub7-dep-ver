@@ -118,6 +118,7 @@ int indexMassa(){
         // Define se o usuário permanece no looping
         printf("Gostaria de tentar outra conversão? Digite 1 para sim e 0 para voltar ao menu principal: ");
         scanf("%d", &logout);
+        fflush(stdin);
         printf("\n\n\n\n\n\n\n\n\n");
 
     } while (logout == 1);

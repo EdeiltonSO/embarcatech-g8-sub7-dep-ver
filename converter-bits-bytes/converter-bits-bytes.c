@@ -10,6 +10,7 @@ void converterBitsBytes() {
     // Solicita ao usuário o valor em bits
     printf("Digite o valor em bits: ");
     scanf("%lf", &bits);
+    fflush(stdin);
 
     // Conversões: de bits para bytes, kilobytes, megabytes e gigabytes
     bytes = bits / 8; // 1 byte = 8 bits

@@ -30,6 +30,7 @@ int indexComprimento()
         printf("\nInforme o tipo de convers�o\n\n1 - Metros para cent�metros\n2 - Metros para mil�metros\n3 - Cent�metros para metro\n4 - Cent�metro para mil�metro\n5 - Mil�metro para metro\n6 - M�limetro para cent�metro\n0 - Sair\n");
 
         scanf("%d",&opcao);
+        fflush(stdin);
 
         if(opcao > 6 || opcao < 0){
             printf("\nop��o invalida. Por favor selecione uma op��o de convers�o apropriada");
@@ -40,6 +41,7 @@ int indexComprimento()
         printf("Informe o valor da medida para realizar a convers�o: ");
         
         scanf("%f",&medida);
+        fflush(stdin);
 
         switch (opcao)
         {
