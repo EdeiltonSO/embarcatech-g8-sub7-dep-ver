@@ -14,26 +14,31 @@ int indexVelocidade() {
     printf("Escolha a primeira unidade para Conversão:\n");
     printf("1 - Metros por Segundo \n2 - Quilômetros por Hora \n3 - Milhas por Hora \n");
     scanf("%d", &opcaoini);
+    fflush(stdin);
     printf("Escolha a segunda unidade para Conversão: \n");
     printf("1 - Metros por Segundo \n2 - Quilômetros por Hora \n3 - Milhas por Hora \n");
     scanf("%d", &opcaofim);
+    fflush(stdin);
     
     if (opcaoini == 1) 
     {
         printf("\nInforme o valor em Metros por Segundo: ");
         scanf("%f", &vms);
+        fflush(stdin);
     } 
     
     else if (opcaoini == 2) 
     {
         printf("\nInforme o valor em Quilômetros por Hora: ");
         scanf("%f", &vkmhs);
+        fflush(stdin);
     } 
     
     else if (opcaoini == 3) 
     {
         printf("\nInforme o valor em Milhas por Hora: ");
         scanf("%f", &vmphs);
+        fflush(stdin);
     } 
     
     else {
