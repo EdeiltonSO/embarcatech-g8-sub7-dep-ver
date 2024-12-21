@@ -70,7 +70,7 @@ Implementado por [Cibelle Sousa Rodrigues](https://github.com/CibelleSousa)
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c`
+1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c .\conv-volume\conv-volume.c`
 2. `./a`
 
 ### Com o Makefile
