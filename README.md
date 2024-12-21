@@ -82,7 +82,7 @@ Implementado por [Joabis Jr.](https://github.com/Joabis25)
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c .\conv-volume\conv-volume.c -o conversor`
+1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\conv-dados\conv-dados.c .\conv-massa\conv-massa.c .\conv-volume\conv-volume.c -o conversor`
 2. `./conversor.exe`
 
 ### Com o Makefile
@@ -94,7 +94,7 @@ Na raiz do projeto, execute uma das sequências de comandos:
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc ./index.c ./conv-comp/conv-comp.c ./conv-tempo/conv-tempo.c ./conv-vel/conv-vel.c ./converter-bits-bytes/converter-bits-bytes.c ./conv-massa/conv-massa.c ./conv-volume/conv-volume.c -o conversor`
+1. `gcc ./index.c ./conv-comp/conv-comp.c ./conv-tempo/conv-tempo.c ./conv-vel/conv-vel.c ./conv-dados/conv-dados.c ./conv-massa/conv-massa.c ./conv-volume/conv-volume.c -o conversor`
 2. `./conversor`
 
 ### Com o Makefile

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
-#include "converter-bits-bytes.h"
+#include "conv-dados.h"
 
 // Função que realiza as conversões de bits para outras unidades
 void converterBitsBytes() {
