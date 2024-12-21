@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 
 void exibirOpcoesGerais();
 void exibirOpcoesConversao(int tipo);
@@ -8,16 +9,19 @@ float obterValor(const char* unidade);
 void volume() {
     int conversores = 0;
 
+    setlocale(LC_ALL, "Portuguese");
     do {
         exibirOpcoesGerais();
-        printf("Escolha uma opçao (ou 8 para sair): ");
+        printf("Escolha uma opÃ§Ã£o (ou 8 para sair): ");
         scanf("%d", &conversores);
+        fflush(stdin);
 
         if (conversores >= 1 && conversores <= 7) {
             int valor;
             exibirOpcoesConversao(conversores);
             printf("Escolha uma conversao (ou 0 para voltar): ");
             scanf("%d", &valor);
+            fflush(stdin);
 
             if (valor != 0) {
                 realizarConversao(conversores, valor);
@@ -106,7 +110,7 @@ void realizarConversao(int tipo, int opcao) {
             printf("Resultado: %.4f\n", resultado);
             break;
 
-        // Outros casos podem ser implementados seguindo o mesmo padrão
+        // Outros casos podem ser implementados seguindo o mesmo padrï¿½o
         default:
             printf("Conversao invalida.\n");
     }
@@ -116,6 +120,7 @@ float obterValor(const char* unidade) {
     float valor;
     printf("Digite o valor em %s: ", unidade);
     scanf("%f", &valor);
+    fflush(stdin);
     return valor;
 }
 
