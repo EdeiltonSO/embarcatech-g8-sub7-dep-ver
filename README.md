@@ -1,10 +1,10 @@
 # Atividade de Depuração e Versionamento
 
-## 🔵 O que é este projeto?
+## 💡 O que é este projeto?
 
 Este é um software para converter unidades de medida utilizado para praticar depuração e versionamento de projetos em C.
 
-## 🔵 Quais recursos estão disponíveis?
+## 🔎 Quais recursos estão disponíveis?
 
 ### Menu principal
 
@@ -77,17 +77,28 @@ A aplicação utiliza constantes pré-definidas e exibe instruções durante tod
 
 Implementado por [Joabis Jr.](https://github.com/Joabis25)
 
-## 🔵 Como executar o programa?
+## 💻 Como executar o programa no Windows?
 
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c .\conv-volume\conv-volume.c`
-2. `./a`
-
-### Com o Makefile
-1. `mingw32-make` (Windows) ou `make` (Linux/MacOS)
+1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c .\conv-volume\conv-volume.c -o conversor`
 2. `./conversor.exe`
 
-Você também pode modificar o nome do executável gerado ao utilizar o GCC diretamente.
-Para isso, adicione a flag `-o conversor` no final do primeiro comando.
+### Com o Makefile
+1. `mingw32-make`
+2. `./conversor.exe`
+
+## 🐧 Como executar o programa no Linux?
+
+Na raiz do projeto, execute uma das sequências de comandos:
+
+### Com o GCC
+1. `gcc ./index.c ./conv-comp/conv-comp.c ./conv-tempo/conv-tempo.c ./conv-vel/conv-vel.c ./converter-bits-bytes/converter-bits-bytes.c ./conv-massa/conv-massa.c ./conv-volume/conv-volume.c -o conversor`
+2. `./conversor`
+
+### Com o Makefile
+1. `make`
+2. `./conversor`
+
+Você também pode modificar o nome do executável gerado no Windows ou no Linux ao utilizar o GCC diretamente. Para isso, modifique a flag `-o conversor` no final do comando 1 com GCC.
