@@ -41,11 +41,11 @@ Implementado por...
 Na raiz do projeto, execute uma das sequências de comandos:
 
 ### Com o GCC
-1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c`
+1. `gcc .\index.c .\conv-comp\conv-comp.c .\conv-tempo\conv-tempo.c .\conv-vel\conv-vel.c .\converter-bits-bytes\converter-bits-bytes.c .\conv-massa\conv-massa.c`
 2. `./a`
 
-### Com o Makefile do MinGW
-1. `mingw32-make`
+### Com o Makefile
+1. `mingw32-make` (Windows) ou `make` (Linux/MacOS)
 2. `./conversor.exe`
 
 Você também pode modificar o nome do executável gerado ao utilizar o GCC diretamente.
