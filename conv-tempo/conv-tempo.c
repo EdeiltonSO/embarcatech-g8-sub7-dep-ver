@@ -17,12 +17,14 @@ do{
     printf("6 - Horas para minutos.\n");
     printf("0 - Sair.\n");
     scanf("%d",&opc);
+    fflush(stdin);
 
-    switch (opc){ //cases das opções
+    switch (opc){ //cases das opï¿½ï¿½es
 
         case 1:{
             printf("Digite quantos segundos:\n");
             scanf("%lf",&segundos);
+            fflush(stdin);
             minutos=segundos/60;
             printf("%.2f segundos em minutos = %.4fmin\n", segundos,minutos);
             break;
@@ -30,6 +32,7 @@ do{
         case 2:{
             printf("Digite quantos segundos:\n");
             scanf("%lf",&segundos);
+            fflush(stdin);
             horas=segundos/3600;
             minutos=segundos/60;
             printf("%.2f segundos em horas = %.4fh\n", segundos,horas);
@@ -39,6 +42,7 @@ do{
         case 3:{
             printf("Digite quantos minutos:\n");
             scanf("%lf",&minutos);
+            fflush(stdin);
             segundos=minutos*60;
             printf("%.2f minutos em segundos = %.4fseg\n", minutos,segundos);
             break;
@@ -46,6 +50,7 @@ do{
         case 4:{
             printf("Digite quantos minutos:\n");
             scanf("%lf",&minutos);
+            fflush(stdin);
             horas=minutos/60;
             printf("%.2f minutos em horas = %.4fh\n", minutos,horas);
 
@@ -54,6 +59,7 @@ do{
         case 5:{
             printf("Digite quantas horas:\n");
             scanf("%lf",&horas);
+            fflush(stdin);
             segundos=horas*3600;
             printf("%.2f horas em segundos = %.4fseg\n",horas,segundos);
 
@@ -62,18 +68,19 @@ do{
         case 6:{
             printf("Digite quantas horas:\n");
             scanf("%lf",&horas);
+            fflush(stdin);
             minutos=horas*60;
             printf("%.2f horas em minutos = %.4fmin\n",horas,minutos);
 
             break;
         }
         case 0:{
-            printf("Fim da conversão\n");
+            printf("Fim da conversï¿½o\n");
             break;
         }
 
         default:{
-          printf("Opção inválida! Digite novamente.\n");
+          printf("Opï¿½ï¿½o invï¿½lida! Digite novamente.\n");
         break;
         }
         
