@@ -11,7 +11,7 @@ float decigrama(int entrada, float valor);
 float centigrama(int entrada, float valor);
 float miligrama(int entrada, float valor);
 
-int main(){
+int indexMassa(){
      
     // Resolve as questões do acento
     system("chcp 65001 > nul");
