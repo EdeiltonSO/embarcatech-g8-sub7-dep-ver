@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <locale.h>
+#include <stdlib.h>
 
 void exibirOpcoesGerais();
 void exibirOpcoesConversao(int tipo);
@@ -9,7 +9,7 @@ float obterValor(const char* unidade);
 void volume() {
     int conversores = 0;
 
-    setlocale(LC_ALL, "Portuguese");
+    system("chcp 65001 > nul");
     do {
         exibirOpcoesGerais();
         printf("Escolha uma opção (ou 8 para sair): ");
@@ -19,7 +19,7 @@ void volume() {
         if (conversores >= 1 && conversores <= 7) {
             int valor;
             exibirOpcoesConversao(conversores);
-            printf("Escolha uma conversao (ou 0 para voltar): ");
+            printf("Escolha uma conversão (ou 0 para voltar): ");
             scanf("%d", &valor);
             fflush(stdin);
 
@@ -27,7 +27,7 @@ void volume() {
                 realizarConversao(conversores, valor);
             }
         } else if (conversores != 8) {
-            printf("Numero invalido. Tente novamente.\n");
+            printf("Número inválido. Tente novamente.\n");
         }
 
     } while (conversores != 8);
@@ -41,7 +41,7 @@ void exibirOpcoesGerais() {
 }
 
 void exibirOpcoesConversao(int tipo) {
-    printf("\nOpcoes de conversao:\n");
+    printf("\nOpções de conversão:\n");
     switch (tipo) {
         case 1:
             printf("1-qL para hL\n2-qL para daL\n3-qL para L\n4-L para qL\n");
@@ -65,7 +65,7 @@ void exibirOpcoesConversao(int tipo) {
             printf("1-mL para cL\n2-mL para dL\n3-mL para L\n");
             break;
         default:
-            printf("Opcao invalida.\n");
+            printf("Opção inválida.\n");
     }
 }
 
@@ -112,7 +112,7 @@ void realizarConversao(int tipo, int opcao) {
 
         // Outros casos podem ser implementados seguindo o mesmo padr�o
         default:
-            printf("Conversao invalida.\n");
+            printf("Conversão inválida.\n");
     }
 }
 
