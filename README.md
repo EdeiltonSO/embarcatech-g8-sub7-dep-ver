@@ -1,8 +1,8 @@
-# Atividade de Depuração e Versionamento
+# Depuração e Versionamento no EmbarcaTech
 
 ## 💡 O que é este projeto?
 
-Este é um software para converter unidades de medida utilizado para praticar depuração e versionamento de projetos em C.
+Este é um software escrito em C para converter unidades de medida. Utilizado para praticar depuração e versionamento de projetos no EmbarcaTech.
 
 ## 🔎 Quais recursos estão disponíveis?
 

@@ -1,3 +1,5 @@
+nul
 *.exe
 .vscode
 **/output/
+conversor
