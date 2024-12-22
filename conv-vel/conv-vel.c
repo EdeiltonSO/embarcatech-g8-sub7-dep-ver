@@ -4,7 +4,7 @@
 #include "conv-vel.h"
 
 int indexVelocidade() {
-    system("chcp 65001 >nul");
+    system("chcp 65001 > nul");
     int opcaoini, opcaofim;
     float vms = 0.0, vmphs = 0.0, vkmhs = 0.0, convfim = 0.0;
     #define mstomph 2.2369; // Constante de Conversão de Metros por Segundo Para Milhas Por Hora

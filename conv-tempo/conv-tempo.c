@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include <locale.h>
+#include <stdlib.h>
 
 #include "conv-tempo.h"
 
 int indexTempo(){
 
-    setlocale(LC_ALL,"portuguese");
+    system("chcp 65001 > nul");
     int opc;
     double segundos,minutos,horas;
 
 do{
-    printf("Qual tipo de conversao de tempo deseja fazer?\n");
+    printf("Qual tipo de conversão de tempo deseja fazer?\n");
     printf("1 - Segundos para minutos.\n");
-    printf("2 - Segundos para Horas.\n");
+    printf("2 - Segundos para horas.\n");
     printf("3 - Minutos para segundos.\n");
     printf("4 - Minutos para horas.\n");
     printf("5 - Horas para segundos.\n");
@@ -21,7 +21,7 @@ do{
     scanf("%d",&opc);
     fflush(stdin);
 
-    switch (opc){ //cases das op��es
+    switch (opc){ //cases das opções
 
         case 1:{
             printf("Digite quantos segundos:\n");
@@ -77,12 +77,12 @@ do{
             break;
         }
         case 0:{
-            printf("Fim da convers�o\n");
+            printf("Fim da conversão\n");
             break;
         }
 
         default:{
-          printf("Op��o inv�lida! Digite novamente.\n");
+          printf("Opção inválida! Digite novamente.\n");
         break;
         }
         
