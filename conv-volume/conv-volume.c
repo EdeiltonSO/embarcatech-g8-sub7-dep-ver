@@ -9,7 +9,9 @@ float obterValor(const char* unidade);
 void volume() {
     int conversores = 0;
 
-    system("chcp 65001 > nul");
+    #ifdef _WIN32
+        system("chcp 65001 > nul");
+    #endif
     do {
         exibirOpcoesGerais();
         printf("Escolha uma opção (ou 8 para sair): ");

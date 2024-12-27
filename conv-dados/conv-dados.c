@@ -27,8 +27,10 @@ void converterBitsBytes() {
 }
 
 int indexDados() {
-    // Define a codificação para UTF-8, garantindo suporte a caracteres especiais
-    system("chcp 65001 > nul"); 
+    // Define a codificação para UTF-8 em sistemas Windows, garantindo suporte a caracteres especiais
+    #ifdef _WIN32
+        system("chcp 65001 > nul");
+    #endif
 
     // Exibe o cabeçalho do programa
     printf("Conversor de Bits e Bytes\n\n");

@@ -5,7 +5,9 @@
 
 int indexTempo(){
 
-    system("chcp 65001 > nul");
+    #ifdef _WIN32
+        system("chcp 65001 > nul");
+    #endif
     int opc;
     double segundos,minutos,horas;
 
