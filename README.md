@@ -117,3 +117,33 @@ Acesse a pasta raiz do projeto clonado e execute uma das sequências de comandos
 2. `./conversor`
 
 Você também pode modificar o nome do executável gerado no Windows ou no Linux ao utilizar o GCC diretamente. Para isso, modifique a flag `-o conversor` no final do comando 1 com GCC.
+
+## ✨ Recursos para versionamento e correção de bugs
+
+### Conventional Commits
+
+Conventional Commits seguem uma estrutura fixa como feat, fix, docs e chore, o que facilita identificar o escopo das mudanças. Isso ajuda a organizar o histórico e facilita o versionamento (por exemplo, ao definir o número da próxima versão do software).
+
+### Labels no repositório
+
+Labels em pull requests e issues ajudam a identificar o escopo das tarefas. Nesse projeto, utilizamos:
+
+- `bugfix`: para correção de bugs
+- `concluído`: para indicar uma issue já resolvida
+- `documentação`: para indicar melhorias ou inclusões na documentação
+- `informação`: para indicar informação que possa ser relevante
+- `novidade`: para indicar a implementação de uma nova feature
+- `pendência`: para indicar uma tarefa que ainda precisa ser feita
+- `teste`: para indicar testes de recursos do código ou do processo
+
+### Issues
+
+As issues permitem reportar problemas, documentar melhorias ou propor funcionalidades. No projeto, o recurso foi utilizado para documentar a pendência de uma tarefa que necessitava de implementação.
+
+### Branches nomeadas segundo o escopo
+
+A nomeação de branches como `feature/...`, `docs/...` ou `bugfix/...` organiza o fluxo de trabalho e indica o propósito da branch, facilitando o entendimento. Portanto, foi um recurso adotado durante o desenvolvimento do projeto.
+
+### Diretivas de pré-processamento para especificar SO
+
+O uso da diretiva `#ifdef _WIN32` permite que determinados trechos de código sejam incluídos a depender do sistema operacional. Utilizamos a diretiva para determinar quando a função `system("chcp 65001 > nul");` seria chamada para corrigir a acentuação. Neste caso, ela só é necessária em sistemas operacionais Windows e é responsável por configurar o terminal para UTF-8.

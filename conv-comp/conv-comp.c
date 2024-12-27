@@ -17,7 +17,9 @@ float milimetroParaCentimetro(float medidaMilimetro);
 
 int indexComprimento()
 {
-    system("chcp 65001 > nul");
+    #ifdef _WIN32
+        system("chcp 65001 > nul");
+    #endif
 
     int opcao = 0;
     float medida = 0;

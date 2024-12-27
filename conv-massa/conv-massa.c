@@ -13,8 +13,10 @@ float miligrama(int entrada, float valor);
 
 int indexMassa(){
      
-    // Resolve as questões do acento
-    system("chcp 65001 > nul");
+    // Resolve as questões do acento em sistemas Windows
+    #ifdef _WIN32
+        system("chcp 65001 > nul");
+    #endif
 
     // Variaveis de controle do tipo de coversão
     int entrada, saida; 
